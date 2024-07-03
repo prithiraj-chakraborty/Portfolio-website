@@ -12,14 +12,16 @@
     <div id="header">
     <div class="container">
         <nav>
-        <img src="portfolio4.jpg" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+        <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Frontend Developer</p>
@@ -30,7 +32,7 @@
     </div>
 </div>
 <!-------------------------------------------------------About------------------------------------------------------>
-<div class="about">
+<div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -73,7 +75,7 @@
 </div>
 <!-----------------------------------------------Services-------------------------------------------------------------------------------->
 
-<div class="services">
+<div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -141,15 +143,16 @@
                     <a href="https://www.instagram.com/chakraborty.prithiraj?igsh=MTdlZXlxdDh3MW8yNw=="><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/prithiraj-chakraborty-12b0a2275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="#" download class="btn btn2" >Download CV</a>
+                <a href="pdfconvertor.pdf" download class="btn btn2" >Download CV</a>
             </div>
             <div class="contact-right"> 
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -159,8 +162,7 @@
     <p>Copyright @ Prithiraj. Made By <i class="fa-solid fa-heart"></i>prithiraj-chakraborty</p>
 </div>
 
-
-
     <script src="app.js"></script>
+      
 </body>
 </html>
