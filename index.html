@@ -24,7 +24,8 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Frontend Developer</p>
+            <p></p>
+            <span id="element"></span>
             <h1>Hi, I am<span> Prithiraj</span><br>
                  Chakraborty From India
              </h1>
@@ -164,6 +165,13 @@
 </div>
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [ 'Web Developer' ,'Frontend Developer', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
       
 </body>
 </html>
